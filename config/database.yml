@@ -15,7 +15,8 @@ default: &default
   pool: 5
   username: root
   password:
-  host: localhost
+  #host: localhost
+  host: youzhaole.com
 
 development:
   <<: *default
