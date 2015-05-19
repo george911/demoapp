@@ -1,4 +1,9 @@
 source 'https://rubygems.org'
+gem 'capistrano', '~> 3.0', require: false, group: :development
+group :development do
+  gem 'capistrano-rails',   '~> 1.1', require: false
+  gem 'capistrano-bundler', '~> 1.1', require: false
+end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
