@@ -16,7 +16,7 @@ default: &default
   username: root
   password:
   #host: localhost
-  host: youzhaole.com
+  host: localhost
 
 development:
   <<: *default
@@ -51,5 +51,5 @@ test:
 production:
   <<: *default
   database: demoapp_production
-  username: demoapp
-  password: <%= ENV['DEMOAPP_DATABASE_PASSWORD'] %>
+  username: deploy
+  password: secret 
